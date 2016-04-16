@@ -74,14 +74,14 @@ table {
                                   not supported by any browser */
 }
 
-.background-image {
+#background-image {
 	position: fixed;
 	left: 0;
 	right: 0;
 	z-index: 1;
 
 	display: block;
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://49.media.tumblr.com/44a62f11fce566aa1ba59bd843be3478/tumblr_nnqm8xkxFg1tiwa1fo1_500.gif');
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('');
 	background-size: cover;
 	width: 100%;
 	height: 100%;
@@ -116,6 +116,11 @@ h1 {
 h1 b {
 	font-family: NexaBold;
 	color: #ecf0f1;
+}
+
+h1 a {
+	text-decoration: none;
+	color: inherit;
 }
 
 h2 {
