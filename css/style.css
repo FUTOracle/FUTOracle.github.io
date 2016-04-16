@@ -1,0 +1,188 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* SEPARATE */
+
+@font-face {
+	font-family: NexaBold;
+	src: url(fonts/Nexa-Bold.otf);
+}
+
+@font-face {
+	font-family: NexaLight;
+	src: url(fonts/Nexa-Light.otf);
+}
+
+@font-face {
+	font-family: OpenSans;
+	src: url(fonts/OpenSans-Regular.ttf);
+}
+
+@font-face: {
+	font-family: OpenSans-Bold;
+	src: url(fonts/OpenSans-Regular.ttf);
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.background-image {
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 1;
+
+	display: block;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://49.media.tumblr.com/44a62f11fce566aa1ba59bd843be3478/tumblr_nnqm8xkxFg1tiwa1fo1_500.gif');
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+  
+	margin: -10px -10px;
+	padding: 10px 10px;
+}
+
+#title {
+margin-top: 15%;
+	
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+h1 {
+	font-size: 128px;
+	font-family: NexaLight;
+	color: #ecf0f1;
+}
+
+h1 b {
+	font-family: NexaBold;
+	color: #ecf0f1;
+}
+
+h2 {
+	display: inline;
+	
+	font-size: 35px;
+	font-family: OpenSans;
+	
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+.mouse {
+  display: block;
+  margin: 0 auto;
+  width: 26px;
+  height: 46px;
+  border-radius: 13px;
+  border: 5px solid $color2;
+  bottom: 40px;
+  position: absolute;
+  left: 50%;
+  margin-left: -14px;
+  span {
+    display: block;
+    margin: 6px auto;
+    width: 5px;
+    height: 5px;
+    border-radius: 4px;
+    background: $color2;
+    border: 1px solid transparent;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: scroll;
+    animation-name: scroll;
+  }
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
